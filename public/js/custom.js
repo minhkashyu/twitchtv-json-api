@@ -46,7 +46,7 @@ const getChannelInfo = function(channel, status, callback) {
 };
 
 const addStreamer = function(status, logo, name, url, game, description) {
-    var html = '<div class="tv-streamer tv-paragraph '+status+'"><div class="row"><div class="col-xs-2 col-md-1"><img src="'+logo+'" alt="Image" class="img-circle" width="50" height="50" /></div><div class="col-xs-10 col-md-3"><a href="'+url+'" title="'+name+'" class="tv-title" target="_blank">'+name+'</a></div><div class="col-xs-12 col-md-8"><p class="tv-game">'+game+description+'</p></div></div></div>';
+    var html = '<div class="tv-streamer tv-paragraph '+status+'"><div class="row"><div class="col-xs-5 col-md-2"><img src="'+logo+'" alt="Image" class="img-circle" width="50" height="50"></div><div class="col-xs-7 col-md-3"><a href="'+url+'" title="'+name+'" class="tv-title" target="_blank">'+name+'</a></div><div class="col-xs-12 col-md-7"><p class="tv-game">'+game+description+'</p></div></div>';
     $('.tv-streamers').append(html);
 };
 

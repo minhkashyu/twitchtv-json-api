@@ -61,12 +61,6 @@ a.tv-logo {
     }
 }
 
-.tv-streamer .row {
-    height: 50px;
-    line-height: 50px;
-    vertical-align: middle;
-}
-
 a.tv-title {
     color: white;
     font-weight: bold;
@@ -78,6 +72,7 @@ a.tv-title {
 }
 
 .tv-game {
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
