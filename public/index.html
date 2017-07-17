@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--<meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tv-wrapper">
+                    <div class="tv-heading tv-paragraph">
+                        <p>
+                            <a href="https://www.twitch.tv/" class="tv-logo" title="Visit Twitch home page">
+                                <!-- image copyrighted by Twitch.tv -->
+                                <svg height="32px" version="1.1" viewBox="0 0 94 32" width="94px" x="0px" y="0px" class="svg-logo_twitch">
+                                    <path clip-rule="evenodd" d="M88,5h-6V0h-9l-6,5h-5.5L59,7.5V5h-5V0H36v5H16l-5-5H0v22l5,5.25L14,32h6v-1.5l3,1.5h12l2-3l1,3h7v-3l3,3h8l0.5-3l2.5,3h10l3-3v3h4l3-3v3h7l7-6V10L88,5z M13,13H8v6h5v6H6l-4-4V2h6v5h5V13z M36,21.5L32.5,25H15V7h6v12h2V7h6v12h2V7h5V21.5z M44,25h-6V7h6V25z M44,5h-6V2h6V5z M57,13h-5v6h5v6h-7l-4-4V2h6v5h5V13z M72,13h-7v6h7v6h-9l-4-4V11l4-4h9V13z M91,25h-6V13h-5v12h-6V2h6v5h7l4,4V25z" fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            &nbsp;&nbsp;streamers
+                        </p>
+                    </div>
+                    <div class="tv-selection">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="radio opts tv-all">
+                                    <label><input type="radio" name="tvradio" value="all">all</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="radio opts online">
+                                    <label><input type="radio" name="tvradio" value="online">online</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="radio opts offline">
+                                    <label><input type="radio" name="tvradio" value="offline">offline</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv-streamers"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

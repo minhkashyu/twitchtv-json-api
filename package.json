@@ -1,0 +1,27 @@
+{
+    "name": "twitchtv-json-api",
+    "version": "1.0.0",
+    "description": "Use the Twitchtv JSON API. A Free Code Camp Front End Project.",
+    "main": "index.js",
+    "scripts": {
+        "build-task:scss-compile": "node-sass-chokidar --source-map true resources/sass/ -o public/css",
+        "build-task:autoprefixer": "postcss public/css/*.css --use autoprefixer -d public/css",
+        "sass:build": "npm-run-all -p build-task:*",
+        "sass:watch": "chokidar 'resources/sass/**/*.scss' -c 'npm run sass:build'",
+        "dev": "npm-run-all -p sass:*",
+        "start": "node index"
+    },
+    "author": "minhkashyu",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.15.3"
+    },
+    "devDependencies": {
+        "dotenv": "^4.0.0",
+        "autoprefixer": "^7.1.2",
+        "chokidar-cli": "^1.2.0",
+        "node-sass-chokidar": "^0.0.3",
+        "npm-run-all": "^4.0.2",
+        "postcss-cli": "^4.1.0"
+    }
+}

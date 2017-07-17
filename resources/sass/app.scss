@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en');
+$black: #353535;
+$purple: #6441a4;
+$dark-red: #76231F;
+$light-red: #CC0000;
+$dark-blue: #125D84;
+$light-blue: #15A9C7;
+$dark-green: #416437;
+$light-green: #23b455;
+
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    background-color: white;
+    color: $black;
+    font-size: 18px;
+}
+
+.tv-wrapper {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.tv-paragraph {
+    padding: 20px;
+    margin: 0;
+}
+
+.tv-heading {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: white;
+    background-color: $purple;
+
+    p {
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+a.tv-logo {
+    display: inline-block;
+    height: 32px;
+
+    svg path {
+        fill: white;
+    }
+}
+
+.tv-selection {
+    color: white;
+    text-align: center;
+
+    .opts {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.tv-streamer .row {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+a.tv-title {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tv-all {
+    background-color: $dark-red;
+}
+
+.tv-game {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.online {
+    background-color: $dark-blue;
+
+    .tv-game {
+        color: $light-blue;
+    }
+}
+
+.offline {
+    background-color: $dark-green;
+
+    .tv-game {
+        color: $light-green;
+    }
+}
